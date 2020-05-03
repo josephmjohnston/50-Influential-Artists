@@ -220,7 +220,13 @@ console.log (getFirstArtist(artists));
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+function typo (artists){
 
+  const nameTypo = artists[9];
+  let 
+
+
+}
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -230,9 +236,16 @@ console.log (getFirstArtist(artists));
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
+
+function getArtistByIndex(array,index) { 
+    
+  let thisArtist = artists(array,index);
+
+  return (`The artist at index ${thisArtist.id} is ${thisArtist.name}`);
+
   }
+  
+  console.log (getArtistByIndex(id,name))
   
   /**
 
@@ -245,9 +258,14 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+
+  function removeArtist(array, index) {
+    var removed = artists.splice(index, 1);
+    console.log (removed); 
+    
   }
+  
+    removeArtist(artists, 2); 
   
   /**
 
