@@ -86,6 +86,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+header {
+  font-size: 20px;
+}
 .aboutnavbar {
   border-left: black solid 2px;
   border-right: black solid 2px;
@@ -114,9 +117,10 @@ header {
   font-size: 50px;
 }
 .centeredBoxText .contactUs {
-  background-color: white;
+  font-size: 20px;
+  background-color: #FFFFFF;
   color: black;
-  border: 1px;
+  border: 5px;
 }
 .artists-container {
   display: flex;
@@ -133,6 +137,6 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 50%;
   height: auto;
 }

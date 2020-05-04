@@ -220,10 +220,18 @@ console.log (getFirstArtist(artists));
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-function typo (artists){
 
+  function typo (artists){
+    let ninthArtist = artists[8];
+    // console.log (ninthArtist)
   
-}
+    ninthArtist.name = ("Vincent Van Gogh")
+    console.log (ninthArtist);
+  }
+  
+  console.log (typo(artists))
+  
+
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -294,9 +302,9 @@ bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 
 
-  function addArtist(/* Code here */){
+  function addArtist(){
 
-    const Joseph ={
+    const newArtist=Joseph ={
       id: 21,
       name: "Joseph", 
       years: "1985 - current day",
