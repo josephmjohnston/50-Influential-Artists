@@ -222,10 +222,7 @@ console.log (getFirstArtist(artists));
 
 function typo (artists){
 
-  const nameTypo = artists[9];
-  let 
-
-
+  
 }
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -295,12 +292,27 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
 
-    /* Code here */
+
+  function addArtist(/* Code here */){
+
+    const Joseph ={
+      id: 21,
+      name: "Joseph", 
+      years: "1985 - current day",
+      genre: "Web Design", 
+      nationality: "Your Nationality Here",
+      bio: "Add 1-2" 
+    }
+
+    artists.push(Joseph);
+
+    console.log (artists.length)
 
   }
 
+  addArtist();
+  
 
 
 
