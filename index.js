@@ -272,12 +272,19 @@ function getArtistByIndex(array,index) {
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(){
+  let newArray = [];
 
-    /* Code here */
+  for (let i = 0; i < artists.length; i++) {
 
+    let currentArtist = artists[i];
+    if (currentArtist.paintings >= 100) {
+    newArray.push(currentArtist.name);
+    }
   }
-
+ console.log (newArray);
+}
+lotsOfArt();
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
