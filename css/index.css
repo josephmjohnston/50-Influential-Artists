@@ -86,6 +86,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+a:link {
+  text-decoration: none;
+}
+body {
+  margin: 2%;
+}
 header {
   font-size: 20px;
 }
@@ -104,10 +110,18 @@ header {
   display: flex;
   justify-content: center;
 }
+header img {
+  width: 50%;
+}
 .title-container {
   position: relative;
   text-align: center;
   color: yellow;
+}
+.title-container img {
+  width: 80%;
+  height: auto;
+  margin: 3%;
 }
 .centeredBoxText {
   position: absolute;
@@ -116,11 +130,15 @@ header {
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
-.centeredBoxText .contactUs {
-  font-size: 20px;
+.centeredBoxText .button {
   background-color: #FFFFFF;
+  border: none;
   color: black;
-  border: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .artists-container {
   display: flex;
@@ -139,4 +157,10 @@ header {
   margin-right: auto;
   width: 50%;
   height: auto;
+}
+.bio {
+  margin: 5%;
+}
+.artist a {
+  font-size: 20px;
 }
