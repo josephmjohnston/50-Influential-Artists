@@ -95,15 +95,20 @@ body {
 header {
   font-size: 20px;
 }
-.aboutnavbar {
-  border-left: black solid 2px;
-  border-right: black solid 2px;
-}
 .navbar {
   width: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar a {
+  margin: 15%;
+}
+.aboutnavbarleft {
+  border-left: black solid 2px;
+}
+.aboutnavbarright {
+  border-right: black solid 2px;
 }
 header {
   text-align: center;
@@ -123,6 +128,9 @@ header img {
   height: auto;
   margin: 3%;
 }
+.title-container img:hover {
+  opacity: 80%;
+}
 .centeredBoxText {
   position: absolute;
   top: 50%;
@@ -130,18 +138,30 @@ header img {
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
+@media (max-width: 500px) {
+  .centeredBoxText {
+    font-size: 25px;
+  }
+}
 .centeredBoxText .button {
-  background-color: #FFFFFF;
   border: none;
-  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  background-color: #FFFFFF;
+  color: black;
 }
 .artists-container {
   display: flex;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
 }
 .artist {
   display: flex;
@@ -158,8 +178,17 @@ header img {
   width: 50%;
   height: auto;
 }
+.artist img:hover {
+  opacity: 80%;
+}
 .bio {
   margin: 5%;
+}
+@media (max-width: 500px) {
+  .bio {
+    text-align: justify;
+    font-size: larger;
+  }
 }
 .artist a {
   font-size: 20px;
